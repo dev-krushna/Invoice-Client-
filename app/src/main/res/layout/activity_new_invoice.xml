@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".new_invoice">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="83dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="76dp"
+        android:gravity="center"
+        android:text="CLIENT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.112"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextText3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@+id/textView5"
+        tools:layout_editor_absoluteX="37dp" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="78dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="40dp"
+        android:text="AMOUNT"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.111"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextText3" />
+
+    <EditText
+        android:id="@+id/editTextText4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="282dp" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="132dp"
+        android:layout_height="31dp"
+        android:text="INVOICE DATE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.132"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="369dp" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:ems="10"
+        android:inputType="date"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.185"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView7" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="108dp"
+        android:layout_height="35dp"
+        android:gravity="center"
+        android:text="DESCRIPTION"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.122"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="494dp" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="220dp"
+        android:layout_height="63dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="547dp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="168dp"
+        android:layout_height="59dp"
+        android:layout_marginTop="36dp"
+        android:text="CREATE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.427"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
